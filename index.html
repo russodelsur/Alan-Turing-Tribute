@@ -2,32 +2,201 @@
 <html>
   <head>
     <style>
-      {
-      font-family: Brandron-groutesque;
-      }
+      * {
+        font-family: Courier New;
+        }
       body {
         background-color: #ECECEC;
       } 
-      h1   {
-        color: #151515;
-        font-size: 5rem;
-        font-family: Brandron-groutesque;
+      footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: auto;
+        max-width: 800px;
       }
-      div#intro {
+      h1, h2, h3, h4 {
+        color: #151515;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1rem;
+        text-align: left;
+      }
+      h3 {
+        font-size: 1rem;
+        text-align: center;
+      }
+      h4 {
+        font-size: .8rem;
+        text-align: center;
+      }
+      div#header {
          display: flex;
-         flex-wrap: wrap;
+         flex-wrap: nowrap;
+         margin: auto;
+         max-width: 800px;
+      }
+      section {
+         display: flex;
+         flex-wrap: nowrap;
+         margin: auto;
+         margin-top: 1rem;
+         max-height: fit-content;
+         border: 1px solid #151515;
+         border-radius: 1rem;
+         max-width: 800px;
+         background-color: white;
+      }
+      section#research {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      section#timeline {
+        flex-wrap: wrap;
+        flex-direction: column;
       }
       p    {
-        color: red;
+        color: #151515;
+        font-size: 1rem;
+        text-align: left;
+        padding: 1rem;
+      }
+      ol {
+        padding: 1rem;
+        display: flex;
+        flex-wrap: nowrap;     
+      }
+      div#timeline{
+        padding: 1rem;
+      }
+      li {
+        
+      }
+      menu {
+        padding: 1rem;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;  
+      }
+      img{
+        border-radius: 1rem;
+        border: 1px solid #151515;
+        margin: 1rem;
+      }
+      img#header {
+        max-height: 500px;
+      }
+      img#research{
+        max-height: 250px;
       }
     </style>
     <title> Alan Turing Tribute </title>
   </head>
-  
-  <div id="intro">
-    <body>
-     <h1> The father of modern computer science </h1>
-    <body>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg" alt="Alan Turing Portrait" width="" height="">
-  </div>    
+  <header>
+      <div id="header">
+        <h3>Alan Turing Tribute Page</h3>
+        <h3><a href="#title">Page Title</a></h3>
+        <h3><a href="#research_link">Research</a></h3>
+      </div>
+  </header>
+  <body>
+      <a id="title">
+    <section>
+      <div>
+      <h1> The father of modern computer science </h1>
+      <h3>Alan Mathison Turing (23 June 1912 to 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. He is widely considered to be the father of theoretical computer science and artificial intelligence.</h3>
+      <h4>Link to his wikipedia page <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">HERE</a> </h4>
+      </div>
+      <img id='header'src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg" alt="Alan Turing Portrait">
+    </section>
+    </a>
+    <section id="research">
+      <a id="research_link">
+        <h1>Alan Turing's work and research</h1>
+      <ol>
+        <div>
+          <h2>Cryptanalysis of the Enigma</h2>
+          <p>
+            Cryptanalysis of the Enigma ciphering system enabled the western Allies in World War II to read substantial amounts of Morse-coded radio communications of the Axis powers that had been enciphered using Enigma machines. This yielded military intelligence which, along with that from other decrypted Axis radio and teleprinter transmissions, was given the codename Ultra.
+          </p>
+        </div>
+        <img id="research" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/EnigmaMachineLabeled.jpg/449px-EnigmaMachineLabeled.jpg" alt="EnigmaMachineLabeled">
+      </ol>
+      <menu>
+        <div>
+          <h2>Turing's proof</h2>
+          <p>
+            Turing's proof is a proof by Alan Turing, first published in January 1937 with the title "On Computable Numbers, with an Application to the Entscheidungsproblem". It was the second proof (after Church's theorem) of the negation of Hilbert's Entscheidungsproblem; that is, the conjecture that some purely mathematical yes–no questions can never be answered by computation.
+          </p>
+          </div>
+        <img id="research" src="https://tomrocksmaths.files.wordpress.com/2021/08/picture-3.png?w=903" alt="EnigmaMachineLabeled">
+      </menu>
+      <ol>
+        <div>
+          <h2>Turing machine</h2>
+          <p>
+            A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.        </p>
+          </p>
+        </div>
+        <img id="research" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Turing_Machine_Model_Davey_2012.jpg/800px-Turing_Machine_Model_Davey_2012.jpg">
+      </ol>
+      <menu>
+        <div>
+          <h2>Turing test</h2>
+          <p>
+            The Turing test, originally called the imitation game by Alan Turing in 1950, is a test of a machine's ability to exhibit intelligent behaviour equivalent to, or indistinguishable from, that of a human. Turing proposed that a human evaluator would judge natural language conversations between a human and a machine designed to generate human-like responses. 
+          </p>
+      </div>
+      <img id="research" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png?20080326133753">
+      </menu>
+      <ol>
+        <h2>Unorganized machine</h2>
+        <p>
+          An unorganized machine is a concept mentioned in a 1948 report in which Alan Turing suggested that the infant human cortex was what he called an "unorganised machine".  
+        </p>
+      </div>
+      <img id="research" src="https://www.researchgate.net/profile/Diogo-Soriano/publication/236200345/figure/fig1/AS:299386732072963@1448390767899/A-type-network_Q320.jpg">
+      </ol>
+      <menu>
+        <div>
+          <h2>Turing pattern</h2>
+          <p>
+            The Turing pattern is a concept introduced by English mathematician Alan Turing in a 1952 paper titled "The Chemical Basis of Morphogenesis" which describes how patterns in nature, such as stripes and spots, can arise naturally and autonomously from a homogeneous, uniform state. In his classic paper, Turing examined the behaviour of a system in which two diffusible substances interact with each other, and found that such a system is able to generate a spatially periodic pattern even from a random or almost uniform initial condition 
+          </p>
+      </div>
+      <img id="research" src="https://i.stack.imgur.com/YKToM.jpg">
+      </menu>
+      <ol>
+        <div>
+          <h2>Turing reduction</h2>
+          <p>
+            In computability theory, a Turing reduction from a decision problem {\displaystyle A}A to a decision problem {\displaystyle B}B is an oracle machine which decides problem {\displaystyle A}A given an oracle for {\displaystyle B}B (Rogers 1967, Soare 1987). It can be understood as an algorithm that could be used to solve {\displaystyle A}A if it had available to it a subroutine for solving B. The concept can be analogously applied to function problems.
+          </p>
+      </div>
+      <img id="research" src="https://i.stack.imgur.com/nEx1X.png">
+      </ol>
+    </a>
+    </section>
+    <section id="timeline">   
+        <h2>Alan Turing's timeline:</h2>
+        <div id="timeline">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+    </section>
+  <body>
+  <footer>
+    <h2>Sources:</h2>
+    <li>Wikipedia <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">Alan Turing</a></li>
+    <li></li>
+    <p>Site by Ruslan Sanakoev <a href="https://github.com/russodelsur" target="_blank">Link to Github</a></p>
+  </footer>
 </html>
