@@ -2,9 +2,6 @@
     font-family: Courier New;
     box-sizing: border-box;
     }
-/* html {
-    width: 100%;
-} */
 body {
     background-color: #ECECEC;
   } 
@@ -92,7 +89,6 @@ section {
      flex-wrap: nowrap;
      margin: auto;
      margin-top: 1rem;
-     max-height: fit-content;
      border: 1px solid #151515;
      border-radius: 1rem;
      max-width: 800px;
