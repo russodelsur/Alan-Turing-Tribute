@@ -1,202 +1,208 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      * {
-        font-family: Courier New;
-        }
-      body {
-        background-color: #ECECEC;
-      } 
-      footer {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        margin: auto;
-        max-width: 800px;
-      }
-      h1, h2, h3, h4 {
-        color: #151515;
-        padding: 1rem;
-      }
-      h1 {
-        font-size: 1.5rem;
-        text-align: center;
-      }
-      h2 {
-        font-size: 1rem;
-        text-align: left;
-      }
-      h3 {
-        font-size: 1rem;
-        text-align: center;
-      }
-      h4 {
-        font-size: .8rem;
-        text-align: center;
-      }
-      div#header {
-         display: flex;
-         flex-wrap: nowrap;
-         margin: auto;
-         max-width: 800px;
-      }
-      section {
-         display: flex;
-         flex-wrap: nowrap;
-         margin: auto;
-         margin-top: 1rem;
-         max-height: fit-content;
-         border: 1px solid #151515;
-         border-radius: 1rem;
-         max-width: 800px;
-         background-color: white;
-      }
-      section#research {
-        flex-wrap: wrap;
-        flex-direction: column;
-      }
-      section#timeline {
-        flex-wrap: wrap;
-        flex-direction: column;
-      }
-      p    {
-        color: #151515;
-        font-size: 1rem;
-        text-align: left;
-        padding: 1rem;
-      }
-      ol {
-        padding: 1rem;
-        display: flex;
-        flex-wrap: nowrap;     
-      }
-      div#timeline{
-        padding: 1rem;
-      }
-      li {
-        
-      }
-      menu {
-        padding: 1rem;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row-reverse;  
-      }
-      img{
-        border-radius: 1rem;
-        border: 1px solid #151515;
-        margin: 1rem;
-      }
-      img#header {
-        max-height: 500px;
-      }
-      img#research{
-        max-height: 250px;
-      }
-    </style>
-    <title> Alan Turing Tribute </title>
-  </head>
-  <header>
-      <div id="header">
-        <h3>Alan Turing Tribute Page</h3>
-        <h3><a href="#title">Page Title</a></h3>
-        <h3><a href="#research_link">Research</a></h3>
-      </div>
-  </header>
-  <body>
-      <a id="title">
+
+<head>
+  <title> Alan Turing Tribute </title>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<header>
+  <div id="header">
+    <h5>Alan Turing Tribute Page</h5>
+    <h5><a href="#title">Page Title</a></h5>
+    <h5><a href="#research_link">Research</a></h5>
+    <h5><a href="#timeline">Timeline</a></h5>
+  </div>
+</header>
+
+<body>
+  <a id="title">
     <section>
       <div>
-      <h1> The father of modern computer science </h1>
-      <h3>Alan Mathison Turing (23 June 1912 to 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. He is widely considered to be the father of theoretical computer science and artificial intelligence.</h3>
-      <h4>Link to his wikipedia page <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">HERE</a> </h4>
+        <h1> The father of modern computer science </h1>
+        <h3>Alan Mathison Turing (23 June 1912 to 7 June 1954) was an English mathematician, computer scientist,
+          logician, cryptanalyst, philosopher, and theoretical biologist. Turing was highly influential in the
+          development of theoretical computer science, providing a formalisation of the concepts of algorithm and
+          computation with the Turing machine, which can be considered a model of a general-purpose computer. He is
+          widely considered to be the father of theoretical computer science and artificial intelligence.</h3>
+        <h4>Link to his wikipedia page <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">HERE</a>
+        </h4>
       </div>
-      <img id='header'src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg" alt="Alan Turing Portrait">
+      <img id='header' src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg"
+        alt="Alan Turing Portrait">
     </section>
-    </a>
+  </a>
+
+  <a id="research_link">
     <section id="research">
-      <a id="research_link">
         <h1>Alan Turing's work and research</h1>
       <ol>
         <div>
           <h2>Cryptanalysis of the Enigma</h2>
           <p>
-            Cryptanalysis of the Enigma ciphering system enabled the western Allies in World War II to read substantial amounts of Morse-coded radio communications of the Axis powers that had been enciphered using Enigma machines. This yielded military intelligence which, along with that from other decrypted Axis radio and teleprinter transmissions, was given the codename Ultra.
+            Cryptanalysis of the Enigma ciphering system enabled the western Allies in World War II to read substantial
+            amounts of Morse-coded radio communications of the Axis powers that had been enciphered using Enigma machines.
+            This yielded military intelligence which, along with that from other decrypted Axis radio and teleprinter
+            transmissions, was given the codename Ultra.
           </p>
         </div>
-        <img id="research" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/EnigmaMachineLabeled.jpg/449px-EnigmaMachineLabeled.jpg" alt="EnigmaMachineLabeled">
+        <img id="research"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/EnigmaMachineLabeled.jpg/449px-EnigmaMachineLabeled.jpg"
+          alt="Enigma Machine Labeled">
       </ol>
       <menu>
         <div>
-          <h2>Turing's proof</h2>
-          <p>
-            Turing's proof is a proof by Alan Turing, first published in January 1937 with the title "On Computable Numbers, with an Application to the Entscheidungsproblem". It was the second proof (after Church's theorem) of the negation of Hilbert's Entscheidungsproblem; that is, the conjecture that some purely mathematical yes–no questions can never be answered by computation.
+          <h2 id="reverse">Turing's proof</h2>
+          <p id="reverse">
+            Turing's proof is a proof by Alan Turing, first published in January 1937 with the title "On Computable
+            Numbers, with an Application to the Entscheidungsproblem". It was the second proof (after Church's theorem) of
+            the negation of Hilbert's Entscheidungsproblem; that is, the conjecture that some purely mathematical yes–no
+            questions can never be answered by computation.
           </p>
-          </div>
-        <img id="research" src="https://tomrocksmaths.files.wordpress.com/2021/08/picture-3.png?w=903" alt="EnigmaMachineLabeled">
+        </div>
+        <img id="research" src="https://tomrocksmaths.files.wordpress.com/2021/08/picture-3.png?w=903"
+          alt="Proof diagram">
       </menu>
       <ol>
         <div>
           <h2>Turing machine</h2>
           <p>
-            A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.        </p>
+            A Turing machine is a mathematical model of computation describing an abstract machine that manipulates
+            symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of
+            implementing any computer algorithm. </p>
           </p>
         </div>
-        <img id="research" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Turing_Machine_Model_Davey_2012.jpg/800px-Turing_Machine_Model_Davey_2012.jpg">
+        <img id="research"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Turing_Machine_Model_Davey_2012.jpg/800px-Turing_Machine_Model_Davey_2012.jpg"
+          alt="">
       </ol>
       <menu>
         <div>
-          <h2>Turing test</h2>
-          <p>
-            The Turing test, originally called the imitation game by Alan Turing in 1950, is a test of a machine's ability to exhibit intelligent behaviour equivalent to, or indistinguishable from, that of a human. Turing proposed that a human evaluator would judge natural language conversations between a human and a machine designed to generate human-like responses. 
+          <h2 id="reverse">Turing test</h2>
+          <p id="reverse">
+            The Turing test, originally called the imitation game by Alan Turing in 1950, is a test of a machine's ability
+            to exhibit intelligent behaviour equivalent to, or indistinguishable from, that of a human. Turing proposed
+            that a human evaluator would judge natural language conversations between a human and a machine designed to
+            generate human-like responses.
           </p>
-      </div>
-      <img id="research" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png?20080326133753">
+        </div>
+        <img id="research"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Turing_Test_version_3.png?20080326133753"
+          alt="Test_diagram">
       </menu>
       <ol>
-        <h2>Unorganized machine</h2>
-        <p>
-          An unorganized machine is a concept mentioned in a 1948 report in which Alan Turing suggested that the infant human cortex was what he called an "unorganised machine".  
-        </p>
-      </div>
-      <img id="research" src="https://www.researchgate.net/profile/Diogo-Soriano/publication/236200345/figure/fig1/AS:299386732072963@1448390767899/A-type-network_Q320.jpg">
+        <div>
+          <h2>Unorganized machine</h2>
+          <p>
+            An unorganized machine is a concept mentioned in a 1948 report in which Alan Turing suggested that the infant
+            human cortex was what he called an "unorganised machine". Turing defined the class of unorganized machines as
+            largely random in their initial construction, but capable of being trained to perform particular tasks.
+          </p>
+        </div>
+        <img id="research"
+          src="https://www.researchgate.net/profile/Diogo-Soriano/publication/236200345/figure/fig1/AS:299386732072963@1448390767899/A-type-network_Q320.jpg"
+          alt="Unorganized machine diagram">
       </ol>
       <menu>
         <div>
-          <h2>Turing pattern</h2>
-          <p>
-            The Turing pattern is a concept introduced by English mathematician Alan Turing in a 1952 paper titled "The Chemical Basis of Morphogenesis" which describes how patterns in nature, such as stripes and spots, can arise naturally and autonomously from a homogeneous, uniform state. In his classic paper, Turing examined the behaviour of a system in which two diffusible substances interact with each other, and found that such a system is able to generate a spatially periodic pattern even from a random or almost uniform initial condition 
+          <h2 id="reverse">Turing pattern</h2>
+          <p id="reverse">
+            The Turing pattern is a concept introduced by English mathematician Alan Turing in a 1952 paper titled "The
+            Chemical Basis of Morphogenesis" which describes how patterns in nature, such as stripes and spots, can arise
+            naturally and autonomously from a homogeneous, uniform state. In his classic paper, Turing examined the
+            behaviour of a system in which two diffusible substances interact with each other, and found that such a
+            system is able to generate a spatially periodic pattern even from a random or almost uniform initial condition
           </p>
-      </div>
-      <img id="research" src="https://i.stack.imgur.com/YKToM.jpg">
+        </div>
+        <img id="research" src="https://i.stack.imgur.com/YKToM.jpg" alt="">
       </menu>
       <ol>
         <div>
           <h2>Turing reduction</h2>
           <p>
-            In computability theory, a Turing reduction from a decision problem {\displaystyle A}A to a decision problem {\displaystyle B}B is an oracle machine which decides problem {\displaystyle A}A given an oracle for {\displaystyle B}B (Rogers 1967, Soare 1987). It can be understood as an algorithm that could be used to solve {\displaystyle A}A if it had available to it a subroutine for solving B. The concept can be analogously applied to function problems.
+            In computability theory, a Turing reduction from a decision problem {\displaystyle A}A to a decision problem
+            {\displaystyle B}B is an oracle machine which decides problem {\displaystyle A}A given an oracle for
+            {\displaystyle B}B (Rogers 1967, Soare 1987). It can be understood as an algorithm that could be used to solve
+            {\displaystyle A}A if it had available to it a subroutine for solving B. The concept can be analogously
+            applied to function problems.
           </p>
-      </div>
-      <img id="research" src="https://i.stack.imgur.com/nEx1X.png">
+        </div>
+        <img id="research" src="https://i.stack.imgur.com/nEx1X.png" alt="Turings reduction diagram">
       </ol>
-    </a>
     </section>
-    <section id="timeline">   
-        <h2>Alan Turing's timeline:</h2>
-        <div id="timeline">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+  </a>
+
+  <a id="timeline">
+    <section id="timeline">
+      <h2>Alan Turing's timeline:</h2>
+      <h4>You are reading this on:</h4>
+      <h4 id="time"></h4>
+      <div>
+        <li>1912 - Alan Mathison Turing born June 23 in Maida Vale, London, to Ethel Sara Turing (nee Stoney) and Julius
+          Mathison Turing.</li>
+        <li>1918 - Turing joins St Michael’s day school in Hastings, where he does not do very well.</li>
+        <li>1926-1931 - He went on to Sherborne School, a well-known independent school in the market town of Sherborne
+          in Dorset.</li>
+        <li>1928 - Turing encountered Albert Einstein‘s work; not only did he grasp it, but he extrapolated Einstein’s
+          questioning of Newton’s laws of motion from a text in which this was never made explicit.</li>
+        <li>1931-1934 - Enters King’s College, Cambridge, as mathematics scholar. He gained first-class honours in
+          Mathematics.</li>
+        <li>1936 - Submitted on 28 May 1936 and delivered 12 November to London Mathematical Society: On Computable
+          Numbers, with an Application to the Entscheidungsproblem (decision problem) in which he outlines the Universal
+          Machine, which later became known as the Turing Machine.</li>
+        <li>1936-1938 - In September Turing went to the Institute of Advanced Studies at Princeton, studying under
+          Alonzo Church. There he started to study cryptology as well as mathematics.</li>
+        <li>1938 - He obtained his PhD from Princeton University; his Ph.D. thesis under the direction of the American
+          mathematician Alonzo Church, Systems of Logic Based on Ordinals, introduced the concept of ordinal logic and
+          the notion of relative computing, where Turing machines are augmented with so-called oracles, allowing a study
+          of problems that cannot be solved by a Turing machine. </li>
+        <li>1939 - Applied to the Royal Society for a grant of £40 for the engineering of a special machine to calculate
+          approximate values for the Riemann zeta-function on its critical line. September – Turing is asked to join the
+          Government Codes and Ciphers School and arrives at Bletchley Park the day after war is declared. There he
+          works with Gordon Welchman to develop the Bombe, a device for decrypting the messages sent by Germans using
+          their Enigma machines.</li>
+        <li>1941 - Turing proposed marriage to Hut 8 co-worker Joan Clarke, a fellow mathematician and cryptanalyst, but
+          their engagement was short-lived. After admitting his homosexuality to his fiancée, who was reportedly
+          “unfazed” by the revelation, Turing decided that he could not go through with the marriage.</li>
+        <li>1942 - Turing and his colleagues break the more complicated German Naval Enigma system. This is a tremendous
+          help to the Allies in the Battle of the Atlantic as it could help them avoid the fearsome German U-boats,
+          which had been responsible for sinking more than 700 Allied ships with 2.3 million tons of vital cargo. Turing
+          travelled to the United States in November and worked with U.S. Navy cryptanalysts on Naval Enigma and bombe
+          construction in Washington, visiting their Computing Machine Laboratory at Dayton, Ohio. He shared what he
+          knew about Enigma in return for being allowed to inspect the speech encryption system being set up to allow
+          conversations between Churchill and Roosevelt. Turing was somewhat dismissive of US cryptanalysis, believing
+          the Americans to rely too heavily on machinery instead of thought.</li>
+        <li>1944 - Colossus, the world’s first large-scale electronic computer, is installed at Bletchley Park.</li>
+        <li>1946 - 19 February, published the first detailed design of a stored-program computer.</li>
+        <li>1947 - He returned to Cambridge for a sabbatical year during which he produced a seminal work on Intelligent
+          Machinery that was not published in his lifetime.</li>
+        <li>1948 - Appointed Reader in the Mathematics Department at the University of Manchester.</li>
+        <li>1949 - He became Deputy Director of the Computing Laboratory, working on software for one of the earliest
+          stored-program computers—the Manchester Mark 1.</li>
+        <li>1951 - Turing is elected Fellow of the Royal Society FRS and also gives a talk about Artificial Intelligence
+          on the BBC radio’s Third Programme.</li>
+        <li>1953 - Turing publishes his classic paper on computer chess.</li>
+        <li>1954 - Dies of cyanide poisoning June 7 in Wilmslow, Cheshire, England. June 8th – Turing’s body is found in
+          his home in Wilmslow, Cheshire. The post-mortem finds that his death had been caused by cyanide poisoning. His
+          body is cremated at Woking crematorium.</li>
       </div>
     </section>
-  <body>
-  <footer>
-    <h2>Sources:</h2>
-    <li>Wikipedia <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">Alan Turing</a></li>
-    <li></li>
-    <p>Site by Ruslan Sanakoev <a href="https://github.com/russodelsur" target="_blank">Link to Github</a></p>
-  </footer>
+  </a>
+</body>
+
+<footer>
+  <h2>Sources:</h2>
+  <li>Wikipedia <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">Alan Turing</a></li>
+  <li>Tuxar <a href="https://tuxar.uk/turing/timeline/" target="_blank">Timeline</a></li>
+  <p>Site by Ruslan Sanakoev <a href="https://github.com/russodelsur" target="_blank">Link to Github</a></p>
+</footer>
+
+<script>
+  var time = new Date();
+
+  document.getElementById("time").textContent = time
+</script>
+
 </html>
